@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">Cortex</title>
+  <desc id="banner-desc">Local-first memory OS for AI coding agents</desc>
+
+  <defs>
+    <!-- Node glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Stronger glow for larger nodes -->
+    <filter id="glow-strong" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Purple-to-blue gradient for nodes -->
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Lighter variant for accent nodes -->
+    <linearGradient id="nodeGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background card -->
+  <rect width="800" height="200" rx="12" ry="12" fill="#0d1117"/>
+
+  <!-- ========== NEURAL NETWORK ICON ========== -->
+
+  <!-- Neural pathway lines (drawn behind nodes) -->
+  <g stroke="url(#nodeGrad)" stroke-width="1.2" opacity="0.35" fill="none">
+    <!-- Left lobe connections -->
+    <line x1="108" y1="72"  x2="138" y2="94"/>
+    <line x1="108" y1="72"  x2="128" y2="54"/>
+    <line x1="128" y1="54"  x2="158" y2="68"/>
+    <line x1="138" y1="94"  x2="158" y2="68"/>
+    <line x1="138" y1="94"  x2="148" y2="118"/>
+    <line x1="148" y1="118" x2="128" y2="136"/>
+    <line x1="128" y1="54"  x2="156" y2="44"/>
+    <line x1="156" y1="44"  x2="178" y2="58"/>
+    <line x1="158" y1="68"  x2="178" y2="58"/>
+    <line x1="108" y1="72"  x2="92"  y2="90"/>
+    <line x1="92"  y1="90"  x2="102" y2="112"/>
+    <line x1="102" y1="112" x2="128" y2="136"/>
+    <line x1="102" y1="112" x2="148" y2="118"/>
+    <!-- Right lobe connections -->
+    <line x1="232" y1="72"  x2="202" y2="94"/>
+    <line x1="232" y1="72"  x2="212" y2="54"/>
+    <line x1="212" y1="54"  x2="182" y2="68"/>
+    <line x1="202" y1="94"  x2="182" y2="68"/>
+    <line x1="202" y1="94"  x2="192" y2="118"/>
+    <line x1="192" y1="118" x2="212" y2="136"/>
+    <line x1="212" y1="54"  x2="184" y2="44"/>
+    <line x1="184" y1="44"  x2="162" y2="58"/>
+    <line x1="182" y1="68"  x2="162" y2="58"/>
+    <line x1="232" y1="72"  x2="248" y2="90"/>
+    <line x1="248" y1="90"  x2="238" y2="112"/>
+    <line x1="238" y1="112" x2="212" y2="136"/>
+    <line x1="238" y1="112" x2="192" y2="118"/>
+    <!-- Cross-hemisphere connections (corpus callosum) -->
+    <line x1="158" y1="68"  x2="182" y2="68"/>
+    <line x1="178" y1="58"  x2="162" y2="58"/>
+    <line x1="148" y1="118" x2="192" y2="118"/>
+    <line x1="128" y1="136" x2="212" y2="136"/>
+    <line x1="156" y1="44"  x2="184" y2="44"/>
+  </g>
+
+  <!-- Nodes — left hemisphere -->
+  <circle cx="108" cy="72"  r="5.5" fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="128" cy="54"  r="4.5" fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="138" cy="94"  r="6"   fill="url(#nodeGrad)"      filter="url(#glow-strong)"/>
+  <circle cx="92"  cy="90"  r="4"   fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="102" cy="112" r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="128" cy="136" r="4.5" fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="148" cy="118" r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="158" cy="68"  r="7"   fill="url(#nodeGrad)"      filter="url(#glow-strong)"/>
+  <circle cx="156" cy="44"  r="4"   fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="178" cy="58"  r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+
+  <!-- Nodes — right hemisphere -->
+  <circle cx="232" cy="72"  r="5.5" fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="212" cy="54"  r="4.5" fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="202" cy="94"  r="6"   fill="url(#nodeGrad)"      filter="url(#glow-strong)"/>
+  <circle cx="248" cy="90"  r="4"   fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="238" cy="112" r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="212" cy="136" r="4.5" fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="192" cy="118" r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+  <circle cx="182" cy="68"  r="7"   fill="url(#nodeGrad)"      filter="url(#glow-strong)"/>
+  <circle cx="184" cy="44"  r="4"   fill="url(#nodeGradLight)" filter="url(#glow)"/>
+  <circle cx="162" cy="58"  r="5"   fill="url(#nodeGrad)"      filter="url(#glow)"/>
+
+  <!-- ========== TEXT ========== -->
+  <!-- "CORTEX" title -->
+  <text
+    x="310" y="107"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="42"
+    font-weight="700"
+    letter-spacing="0.15em"
+    fill="#ffffff">CORTEX</text>
+
+  <!-- Subtitle -->
+  <text
+    x="312" y="134"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="14"
+    font-weight="400"
+    letter-spacing="0.02em"
+    fill="#8b949e">Local-first memory OS for AI coding agents</text>
+</svg>
