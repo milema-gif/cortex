@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "cortex": {
+      "command": "node",
+      "args": ["dist/server.js"],
+      "cwd": "/path/to/cortex",
+      "env": {
+        "ENGRAM_DB": "$HOME/.engram/engram.db",
+        "ENGRAM_VEC_URL": "http://127.0.0.1:7438",
+        "OLLAMA_URL": "http://127.0.0.1:11434"
+      }
+    }
+  }
+}
